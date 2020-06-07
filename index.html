@@ -27,37 +27,38 @@
             </select> 
             <label for="rate-label">How would rate InstaBook?</label>
             <input required id="rate" type="range" max="10" min="1">
-            <fieldset id="feedback-positive" name="positive">
+            <fieldset id="feedback-positive">
                 <legend>Which of the following features of InstaBook do you like?</legend>
                 <label for="stories">
-                    <input type="radio" id="stories" value="stories">Stories
+                    <input type="radio" id="stories" value="stories" name="positive">Stories
                 </label>    
                 <label for="posts">
-                    <input type="radio" id="posts" value="posts">Posts
+                    <input type="radio" id="posts" value="posts" name="positive">Posts
                 </label>
                 <label for="live">
-                    <input type="radio" id="live" value="live broadcast">Live Broadcast
+                    <input type="radio" id="live" value="live broadcast" name="positive">Live Broadcast
                 </label>
                 <label for="comments-likes">
-                    <input type="radio" id="comments-likes" value="comments & likes">Comments and Likes
+                    <input type="radio" id="comments-likes" value="comments & likes" name="positive">Comments and Likes
                 </label>
             </fieldset>
             <fieldset id="feedback-negative" name="negative">
-                <legend>Which of the following features of InstaBook do you NOT like?</legend>
+                <legend>Which of the following features of InstaBook do you like?</legend>
                 <label for="stories">
-                    <input type="radio" id="stories" value="stories">Stories
+                    <input type="radio" id="stories" value="stories" name="negative">Stories
                 </label>    
                 <label for="posts">
-                    <input type="radio" id="posts" value="posts">Posts
+                    <input type="radio" id="posts" value="posts" name="negative">Posts
                 </label>
                 <label for="live">
-                    <input type="radio" id="live" value="live broadcast">Live Broadcast
+                    <input type="radio" id="live" value="live broadcast" name="negative">Live Broadcast
                 </label>
                 <label for="comments-likes">
-                    <input type="radio" id="comments-likes" value="comments & likes">Comments and Likes
+                    <input type="radio" id="comments-likes" value="comments & likes" name="negative">Comments and Likes
                 </label>
             </fieldset>
-            <label for="reccomend">Would you reccomend InstaBook to someone else?</label>
+            <fieldset id="reccomend">
+                <legend>Would you reccomend InstaBook to someone else?</legend>
                 <label for="definitely">
                     <input type="checkbox"  id="definitely" value="definitely">Definitely
                 </label>
@@ -65,17 +66,15 @@
                     <input type="checkbox" id="maybe" value="maybe">Maybe
                 </label>
                 <label for="Never">
-                    <input type="checkbox" id="never" value="never">Never
+                     <input type="checkbox" id="never" value="never">Never
                 </label>
-            </label>
-            <label for="feedback">Feedback
+            </fieldset>
+            <label for="feedback">Feedback</label>
                 <textarea id="feedback" placeholder="Please enter your feedback here"></textarea>
-            </label>
             <label for="submit">
                 <input type="submit" id="submit">
             </label>
         </form>
     </main>
-    
 </body>
 </html>
