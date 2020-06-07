@@ -79,6 +79,8 @@ form textarea {
     border-radius: 10px;
     border-width: 2px;
     border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 form textarea:focus {
     border-width: 5px;
