@@ -9,16 +9,18 @@ main::after {
     content: "";
     background-image: url(./background.jpg);
     background-repeat: no-repeat;
-    opacity: 0.65;
+    opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;  
+    border-radius: 20px;
 }
 h1 {
     text-align: center;
+    text-decoration: greenyellow underline  ;
 }
 p {
     text-align: center;
@@ -35,13 +37,64 @@ form label {
 }
 form input {
     padding: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+}
+form input[type="text"]:focus {
+    border-width: 5px;
+    border-color: greenyellow;
+    height: 50px;
+}
+form input[type="email"]:focus {
+    border-width: 5px;
+    border-color: greenyellow;
+    height: 50px;
+}
+form input[type="number"]:focus {
+    border-width: 5px;
+    border-color: greenyellow;
+    height: 50px;
+}
+form select {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    height: 50px;
+    font-size: 15px;
+}
+form select:focus {
+    border-width: 5px;
+    border-color: greenyellow;
+    height: 50px;   
 }
 form fieldset{
+    background-color: rgba(0,0,255,0.09);
     padding: 30px;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: black;
+}
+form fieldset:focus{
+    border-color: greenyellow;
+}
+form textarea {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+}
+form textarea:focus {
+    border-width: 5px;
+    border-color: greenyellow;
+    height: 50px;   
 }
 #submit {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 25%;
+    border-width: 2px;
+    border-color: black;
+    height: 50px;
+    background-color: greenyellow;
 }
 
