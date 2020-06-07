@@ -10,14 +10,14 @@
         <h1 id="title">InstaBook Survey Form</h1>
         <p id="description">Thank you for taking the time to tell us what you think about our platform</p>
         <form id="survey-form">
-            <label for="name-label">Name</label>
+            <label for="name-label" id="name-label">Name</label>
             <input required id="name" type="text" placeholder="Jane/John Doe">
-            <label for="email-label">Email</label>
+            <label for="email-label" id="email-label">Email</label>
             <input required id="email" type="email" placeholder="someone@example.com">
-            <label for="number-label">Age</label>
+            <label for="number-label" id="number-label">Age</label>
             <input required id="number" type="number" max="99" min="18" placeholder="18">
             <label for="usage-label">How long have you been using InstaBook?</label>
-            <select required id="usage">
+            <select required id="dropdown">
                 <option value="few-months">A few months</option>
                 <option value="year">A year</option>
                 <option value="two-years">Two years</option>
@@ -27,38 +27,52 @@
             </select> 
             <label for="rate-label">How would rate InstaBook?</label>
             <input required id="rate" type="range" max="10" min="1">
-            <fieldset id="feedback-positive">
+            <fieldset id="feedback-positive" name="positive">
                 <legend>Which of the following features of InstaBook do you like?</legend>
                 <label for="stories">
-                    <input type="checkbox" id="stories">Stories
+                    <input type="radio" id="stories" value="stories">Stories
                 </label>    
                 <label for="posts">
-                    <input type="checkbox" id="posts">Posts
+                    <input type="radio" id="posts" value="posts">Posts
                 </label>
                 <label for="live">
-                    <input type="checkbox" id="live">Live Broadcast
+                    <input type="radio" id="live" value="live broadcast">Live Broadcast
                 </label>
                 <label for="comments-likes">
-                    <input type="checkbox" id="comments-likes">Comments and Likes
+                    <input type="radio" id="comments-likes" value="comments & likes">Comments and Likes
                 </label>
             </fieldset>
-            <fieldset id="feedback-negative">
+            <fieldset id="feedback-negative" name="negative">
                 <legend>Which of the following features of InstaBook do you NOT like?</legend>
                 <label for="stories">
-                    <input type="checkbox" id="stories">Stories
+                    <input type="radio" id="stories" value="stories">Stories
                 </label>    
                 <label for="posts">
-                    <input type="checkbox" id="posts">Posts
+                    <input type="radio" id="posts" value="posts">Posts
                 </label>
                 <label for="live">
-                    <input type="checkbox" id="live">Live Broadcast
+                    <input type="radio" id="live" value="live broadcast">Live Broadcast
                 </label>
                 <label for="comments-likes">
-                    <input type="checkbox" id="comments-likes">Comments and Likes
+                    <input type="radio" id="comments-likes" value="comments & likes">Comments and Likes
                 </label>
             </fieldset>
+            <label for="reccomend">Would you reccomend InstaBook to someone else?</label>
+                <label for="definitely">
+                    <input type="checkbox"  id="definitely" value="definitely">Definitely
+                </label>
+                <label for="maybe">
+                    <input type="checkbox" id="maybe" value="maybe">Maybe
+                </label>
+                <label for="Never">
+                    <input type="checkbox" id="never" value="never">Never
+                </label>
+            </label>
             <label for="feedback">Feedback
                 <textarea id="feedback" placeholder="Please enter your feedback here"></textarea>
+            </label>
+            <label for="submit">
+                <input type="submit" id="submit">
             </label>
         </form>
     </main>
