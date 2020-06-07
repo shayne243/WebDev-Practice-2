@@ -17,7 +17,7 @@
             <label for="number-label">Age</label>
             <input required id="number" type="number" max="99" min="18" placeholder="18">
             <label for="usage-label">How long have you been using InstaBook?</label>
-            <select id="usage">
+            <select required id="usage">
                 <option value="few-months">A few months</option>
                 <option value="year">A year</option>
                 <option value="two-years">Two years</option>
@@ -25,6 +25,41 @@
                 <option value="more-than-five-years">More than five years</option>
                 <option value="not-sure">I'm not sure</option>
             </select> 
+            <label for="rate-label">How would rate InstaBook?</label>
+            <input required id="rate" type="range" max="10" min="1">
+            <fieldset id="feedback-positive">
+                <legend>Which of the following features of InstaBook do you like?</legend>
+                <label for="stories">
+                    <input type="checkbox" id="stories">Stories
+                </label>    
+                <label for="posts">
+                    <input type="checkbox" id="posts">Posts
+                </label>
+                <label for="live">
+                    <input type="checkbox" id="live">Live Broadcast
+                </label>
+                <label for="comments-likes">
+                    <input type="checkbox" id="comments-likes">Comments and Likes
+                </label>
+            </fieldset>
+            <fieldset id="feedback-negative">
+                <legend>Which of the following features of InstaBook do you NOT like?</legend>
+                <label for="stories">
+                    <input type="checkbox" id="stories">Stories
+                </label>    
+                <label for="posts">
+                    <input type="checkbox" id="posts">Posts
+                </label>
+                <label for="live">
+                    <input type="checkbox" id="live">Live Broadcast
+                </label>
+                <label for="comments-likes">
+                    <input type="checkbox" id="comments-likes">Comments and Likes
+                </label>
+            </fieldset>
+            <label for="feedback">Feedback
+                <textarea id="feedback" placeholder="Please enter your feedback here"></textarea>
+            </label>
         </form>
     </main>
     
